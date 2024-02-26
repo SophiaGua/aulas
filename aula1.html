@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,20 @@
 <body>
    <h1>Primeira aula</h1>
    <h3>Data: 19/02/2024</h3>
-
+<button onclick="exibir();">Exibir</button><br>
    <script>
+      function exibir(){
+         Window.alert("exibindo os resultados.");
         document.write("java");
         document.write("<br>");
         document.write(5+5);
+        document.write("<br>");
         let x = 3 + 2;
         document.write(x);
-      console.log("teste!");
-   </script>
+      console.log("teste!"); 
+      console.log("valor de x= ",x);
+      let data = document.getElementById("d").innertext;
+      }
+</script>
 </body>
 </html>
