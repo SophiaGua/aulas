@@ -6,13 +6,18 @@
     <title>Document</title>
 </head>
 <body Style="font-size: 30px;">
-    <button onclick="alterar();" style="font-size:20px;"> Exibir </button>
-    <h2 id="titulo"> Exemplo 1 </h2>
-    <p id="x"> </p>
+    <button onclick="alterar();" style="font-size:20px;">Alterar Texto</button>
+    <h2 id="titulo"> Exemplo 2 - DOM </h2>
+    <p id="p1">gggg </p>
+    <p id="p2">oooo</p>
     <script>
-        document.getElementById('titulo').innerHTML = "teste";
-        document.getElementById('x').innerHTML = "Carlos";
+        function alterar(){
+        const elemento1 = document.getElementById('p1');
+        const elemento2 = document.getElementById('p2');
+        let troca = elemento2.innerHTML;
+        document.getElementById('p2').innerHTML = elemento1.innerHTML;
+        document.getElementById('p1').innerHTML = troca;
+        }
     </script>
-    
 </body>
 </html>
